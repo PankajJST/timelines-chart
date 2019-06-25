@@ -29,7 +29,8 @@
     "build": "rimraf dist && mkdir dist && rollup -c",
     "minify": "terser dist/timelines-chart.js -o dist/timelines-chart.min.js -c -m --comments '/Version/'",
     "build-module": "rollup -c rollup.config.module.js",
-    "prepare": "npm run build && npm run minify && npm run build-module"
+    "prepare": "npm run build && npm run minify && npm run build-module",
+    "start": "node index.js"
   },
   "files": [
     "dist/**/*",
